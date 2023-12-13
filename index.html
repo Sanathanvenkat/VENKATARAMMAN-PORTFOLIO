@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkat~Portfolio</title>
+    <link rel ="stylesheet" href="pt.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="sana-high-resolution-logo-white.png" class="logo">
+                <ul id="sidemeu">
+                    <li><a href ="#header">Home</a></li>
+                    <li><a href ="#about">About</a></li>
+                    <li><a href ="#project">Project</a></li>
+                    <li><a href ="#contact">Contact</a></li>
+                    <i class = "fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class = "fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="headertext">
+                <p>Mechanical Engineer</p>
+                <h1>Hi, I'm <span>Venkataraman</span> </h1>
+                <iframe src="https://giphy.com/embed/cWWwLuxISKDRMyuqGB" width="200" height="200" frameBorder="0" class="giphy-embed"></iframe>
+            </div>
+        </div>
+    </div>    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="venkat.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 id="sub-title">About <span>Me</span></h2><br>
+                    <p>I am a Dedicated Engineer driven by the passion and commited to excellence.<br>With a background in Mechanical Enginnering, I bring expertise in <b>Mechanical</b>,<b>Data Science</b>,<b>Data Analytics</b> and <b>Front-End Developement</b><br>
+                        My journey is marked by impactful projects in Data Science and Embedded Systems<br>Looking forward,I aim to be a Full-stack Developer<br>Seeking meaningful collabration and oppournities for growth
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Technical-Skills')">Technical-Skills</p>
+                        <p class="tab-links" onclick="opentab('Professional-Skills')">Professional-Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Technical-Skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content"id="Professional-Skills">
+                        <ul>
+                            <li>Communication</li>
+                            <li>Problem-Solving</li>
+                            <li>Critical-thinking</li>
+                            <li>Multi-Tasking</Multi-Tasking></li>
+                            <li>Leadership-Skills</li>
+                            <li>Work-Ethic</li>
+                            <li>Creativity</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-content"id="Education">
+                        <ul>
+                            <li><span>Secondary-Education</span><br>2016-2017<br>Bala Barathi Matriculation School </li>
+                            <li><span>HigherSecondary-Education</span><br>2018-2019<br>Bala Barathi Matriculation School </li>
+                            <li><span>Bachelor of Enginnering</span><br>2019-2023<br>SONA college of Technology</li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <div class="container">
+            <h2 id="sub-title">My <span>Project</span></h2>
+            <div class="projects-list">
+                <div>
+                    <h2>Re-Sale Car Value Prediction</h2>
+                    <p>Prediction of the car value using the features inside the car by Machine-Learning techniques</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Predicting Successful SpaceX Launch and Saving Bid Amount</h2>
+                    <p> Machine-Learning,SQL,Data Analytics,Visualization and Dashboard are the tech used in this process</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Voice-Controlled Automated Wheel chair with Object-Detection</h2>
+                    <p>Embedded system, aurdino,android app are used to get final output </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fas fa-paper-plane"></i>venkataramanb27@gmail.com</a>
+                    <p><i class ="fas fa-phone-square"></i> 94430-33800</p>
+                    <a href="D:\website\portfolio\VENKATARAMAN B-1.pdf" download="venkataraman resume.pdf" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="pt.js"></script>
+</body>
+</html>
